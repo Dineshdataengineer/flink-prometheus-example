@@ -6,7 +6,7 @@ plugins {
 
     id("org.unbroken-dome.test-sets") version "2.2.1"
     id("com.github.johnrengelman.shadow") version "5.2.0"
-    id("com.diffplug.gradle.spotless") version "3.26.1"
+    id("com.diffplug.gradle.spotless") version "3.27.1"
     id("com.github.spotbugs") version "3.0.0"
     id("com.avast.gradle.docker-compose") version "0.10.7"
     id("com.github.ben-manes.versions") version "0.27.0"
@@ -21,7 +21,7 @@ dependencies {
     compileOnly("org.apache.flink:flink-java:$flinkVersion")
     compileOnly("org.apache.flink:flink-streaming-java_2.11:$flinkVersion")
 
-    val junitVersion = "5.5.2"
+    val junitVersion = "5.6.0"
     testImplementation("org.junit.jupiter:junit-jupiter-api:$junitVersion")
     testImplementation("org.apache.flink:flink-test-utils_2.11:$flinkVersion")
     testImplementation("org.assertj:assertj-core:3.14.0")
